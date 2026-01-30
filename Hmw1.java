@@ -33,5 +33,40 @@ public class hw {
                 System.out.println("Invalid");
             }
         }while (userChoice != 0);
+        //part a of the assignment
+        public static int [] createRandomArray (int size){
     
+            Random random = new Random();
+            int [] a = new int [size];
+            for (int i = 0; i < size; i++){
+                a [i] = random.nextInt(101);
+         }
+         return a;
+        }
+    
+        public static void printArray(){
+            for( int i = 0; i < array.length; i ++){
+                System.out.print(array[i] + " ");
+            }
+            System.out.println();
+        }
+        //part c of the assignment
+        public static void findMinMax(){
+    
+            int min = array[0];
+            int max = array[0];
+    
+            for (int i = 0; i< array.length; i ++){
+                if (array[i] < min){
+                    min = array [i];
+                }
+                if( array [i] > max){
+                    max = array [i];
+                }
+            }
+    
+            System.out.println("Min is " + min);
+            System.out.println("Max is " + max);
+        }
     }
+
