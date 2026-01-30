@@ -69,4 +69,52 @@ public class hw {
             System.out.println("Max is " + max);
         }
     }
+    //part d of the assignment
+    public static void averageAndDifferences(){
+        double sum = 0;
+
+        for (int i = 0; i< array.length; i++){
+            sum+=array[i];
+        }
+
+        double average = sum/array.length;
+
+        System.out.println("Average is " + average);
+        System.out.println("Differences are ");
+
+        for(int i = 0; i< array.length; i ++){
+            System.out.print((array[i] - average));
+        }
+        System.out.println();
+    }
+  //part e of the assignment
+    public static void sumOddEvenIndexes(){
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for(int i = 0; i<array.length; i ++){
+            if(i%2 == 0){
+                evenSum+=array[i];
+            }else {
+                oddSum += array[i];
+            }
+        }
+        System.out.println("Even sum is " + evenSum);
+        System.out.println("Odd sum is " + oddSum);
+    }
+  //part b of the assignment
+    public static void showMenu(){
+        System.out.println("--------MENU---------");
+        System.out.println("1. Print Array");
+        System.out.println("2. Print Min and Max");
+        System.out.println("3. Print Average and Differences");
+        System.out.println("4. Print Odd and Even Index Sums");
+        System.out.println("0. Exist");
+        System.out.print("Choice: ");
+    }
+
+
+
+}
+
 
